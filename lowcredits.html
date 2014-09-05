@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+      input, textarea {
+        -webkit-touch-callout: default;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+        cursor: text;
+      }
+      a {
+        color: white;
+      }
+      a:visited {
+        color: white;
+        font-weight: bold;
+      }
+      body {
+        background-color: #1A181D;
+      }
+      #content {
+        color: white;
+      }
+      .housing {
+        background-color: #271F50;
+      }
+      .hygiene {
+        background-color: #0C4E2A;
+      }
+      .fun {
+        background-color: #666500;
+      }
+      .food {
+        background-color: #624C35;
+      }
+      .clothing {
+        background-color: #6C2170;
+      }
+      .masters {
+        background-color: #080B12;
+      }
+      .punishment {
+        background-color: #5B1619;
+      }
+      .option {
+        background-color: rgba(255,255,255,0.15);
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .selected {
+        border: 2px solid white;
+      }
+      #credits {
+        color: white;
+      }
+      #donate {
+      	position: fixed;
+      	top: 10px;
+      	right: 10px;
+      }
+      input[type="image"] {
+      	cursor: pointer !important;
+      	border-bottom-left-radius: 13px;
+      }
+      input[type="image"]:focus {
+      	outline: 0;
+      }
+      .COINWIDGETCOM_CONTAINER {
+      	position: fixed !important;
+      	right: 10px;
+      	top: 10px;
+      }
+      .COINWIDGETCOM_WINDOW{
+      	position: fixed !important;
+      	top: 44px !important;
+      }
+    </style>
+    <title>Sissy Life CYOA - Low Credits Edition</title>
+    <script type="text/javascript">
+    	var creditsMultiplier = 10;
+    	var whine = false;
+    </script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+    <script type="text/javascript" src="js/choices.js"></script>
+    <script type="text/javascript" src="js/VN.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <script src="js/lib/coin.js"></script>
+	<script>
+		CoinWidgetCom.go({
+			wallet_address: "1NEEYQQ37uc2zjx6Wcpeu8VxvrVhNNiUae"
+			, currency: "bitcoin"
+			, counter: "hide"
+			, alignment: "br"
+			, qrcode: true
+			, auto_show: false
+			, lbl_button: "Donate to /d/eviant Programmer"
+			, lbl_address: "My Bitcoin Address:"
+			, lbl_count: "donations"
+			, lbl_amount: "BTC"
+		});
+	</script>
+  </head>
+  <body onload="setup()">
+    <div id="all" style="color:white;">
+      <div>
+        <h1>Sissy Life - Low Credits Edition</h1>
+        <h2>Welcome to the game show</h2>
+        <h3>The rules of this game are simple. Over the course of the next two months, your life will be televised to millions, as part of our popular T.V. show, Sissy Life. If you're able to last all two months following our basic rules, you'll be given $500,000 USD and a free three week trip to anywhere in the world. Before the games begin, you'll be given a random number of credits. You may spend these however you like, but I recommend you cover the necessities first. Feel free to have fun, if you choose, because everyone who's watching will be told that everything was picked at random.</h3>
+      </div>
+      <div id="credits"></div>
+      <div id="select"></div>
+      <div id="content"></div>
+      <div id="screenie"></div>
+    </div>
+  </body>
+</html>
