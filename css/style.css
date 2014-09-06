@@ -1,0 +1,70 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+input, textarea {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+  font-weight: bold;
+}
+body {
+  background-color: #1A181D;
+}
+#content {
+  color: white;
+}
+.housing {
+  background-color: #271F50;
+}
+.hygiene {
+  background-color: #0C4E2A;
+}
+.fun {
+  background-color: #666500;
+}
+.food {
+  background-color: #624C35;
+}
+.clothing {
+  background-color: #6C2170;
+}
+.masters {
+  background-color: #080B12;
+}
+.punishment {
+  background-color: #5B1619;
+}
+.option {
+  background-color: rgba(255,255,255,0.15);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.selected {
+  border: 2px solid white;
+}
+#credits {
+  color: white;
+}
+.COINWIDGETCOM_CONTAINER {
+	position: fixed !important;
+	right: 10px;
+	top: 10px;
+}
+.COINWIDGETCOM_WINDOW{
+	position: fixed !important;
+	top: 44px !important;
+}
